@@ -53,7 +53,7 @@
 
 .heading > h2 {
     font-family: roboto condensed;
-    color: #cec2c1;
+    color: #886955;
 }
 
 .footer {
@@ -63,7 +63,9 @@
 
 .footer > h2 {
     font-family: poppins;
-    color: white;
+    color: #cec2c1;
+    font-weight: 100;
+    padding-bottom: 10px;
 }
 
 /* Let your videos speak*/
@@ -93,13 +95,11 @@
 }
 
 .tagline > h1 {
-    color: transparent;
-    font-family: Oswald;
-    letter-spacing: 0.2ch;
+    color: lightgray;
+    font-family: ROKKIT;
+    font-weight: 100;
     text-align: center;
     font-size: 80px;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #cec2c1;
 }
 
 /* Projects Showcase*/
@@ -163,7 +163,7 @@
 }
 
 .vid:hover {
-    transform: scale(1.1); /* Adjust the scaling factor for zoom effect */
+    transform: scale(1.05); /* Adjust the scaling factor for zoom effect */
     filter: brightness(0.7); /* Adjust the brightness for the darken effect */
 }
 
@@ -239,6 +239,7 @@
 
 .projects-footer > h1 {
     font-family: Roboto;
+    font-weight: 100;
     color: #5f3124;
 }
 
@@ -263,7 +264,8 @@
 .clientcontent > h1 {
     margin-left: 10%;
     font-family: Roboto;
-    color: white;
+    color: #b1a296;
+    font-weight: 300;
 }
 
 
@@ -390,6 +392,10 @@
         display: grid;
         grid-template-columns: 100%;
         grid-template-rows: auto auto;
+    }
+
+    .aboutcontent > div {
+        width: 100%;
     }
 }
 
