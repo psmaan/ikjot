@@ -13,3 +13,14 @@ YTLinks.forEach((link) => {
 YTPlayerOverlay.addEventListener("click", () => {
     YTPlayerOverlay.classList.remove("active");
 });
+
+function showSidebar() {
+    const sidebar = document.querySelector(".sidebar");
+    sidebar.style.display = 'flex';
+}
+
+function hideSidebar() {
+    const sidebar = document.querySelector(".sidebar");
+    sidebar.style.display = 'none';
+}
+
