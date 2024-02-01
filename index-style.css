@@ -25,6 +25,7 @@
     height: 100vh;
     width: 400px;
     background-color: #5f31241a;
+    background-color: white;
     z-index: 999;
     backdrop-filter: blur(10px);
     box-shadow: -10px 0 10px rgba(0, 0, 0, 0.3);
