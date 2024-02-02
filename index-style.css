@@ -162,8 +162,10 @@
 }
 
 .tagline > h1 {
-    color: lightgray;
-    font-family: ROKKIT;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: white;
+    color: transparent;
+    font-family: Poppins;
     font-weight: 100;
     text-align: center;
     font-size: 80px;
@@ -285,6 +287,10 @@
     left: 50%;
     transform: translate(-50%, -100%);
     transition: all 400ms ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .youtube-player-overlay.active .youtube-player-popup {
