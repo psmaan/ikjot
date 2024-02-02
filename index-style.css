@@ -19,7 +19,7 @@
 
 .sidebar {
     display: none;
-    position: fixed;
+    position: absolute;
     top: 0;
     right: 0;
     height: 100vh;
@@ -29,6 +29,12 @@
     backdrop-filter: blur(10px);
     box-shadow: -10px 0 10px rgba(0, 0, 0, 0.3);
     flex-direction: column;
+}
+
+@media (max-width: 600px) {
+    .sidebar  {
+        width: 100%;
+    }
 }
 
 .sidebar ul {
@@ -104,7 +110,7 @@
 
 .heading > h2 {
     font-family: roboto condensed;
-    color: white;
+    color: #886955;
 }
 
 .footer {
@@ -116,7 +122,17 @@
     font-family: poppins;
     color: #cec2c1;
     font-weight: 100;
-    padding-bottom: 10px;
+    padding: 5px 10px;
+}
+
+.footer > h2 > a {
+    color: #cec2c1;
+    text-decoration: none;
+}
+
+.footer > h2:hover {
+    border: 1px solid #cec2c1;
+    transition: 0.5s;
 }
 
 /* Let your videos speak*/
@@ -291,7 +307,16 @@
 .projects-footer > h1 {
     font-family: Roboto;
     font-weight: 100;
-    color: #5f3124;
+    color: #886955;
+    padding: 10px;
+}
+
+.projects-footer > h1:hover {
+    border-radius: 30px;
+    background-color: #886955;
+    border: 1px solid #886955;
+    color: white;
+    transition: 0.3s;
 }
 
 /* Clients*/
@@ -351,8 +376,6 @@
   position: absolute;
   top: 0;
   bottom: 0;
-  width: 20px; /* Adjust the width of the transparent edges */
-  background: linear-gradient(to right, transparent, white); /* Adjust the gradient direction as needed */
 }
 
 .logos-slide::before {
@@ -396,11 +419,14 @@
     justify-content: center;
     background: url("MEDIA/introbackground.png");
     background-size: cover;
+    min-height: 420px;
 }
 
 .aboutcontent {
-    margin-top: 80px;
     min-width: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .intro {
@@ -423,7 +449,9 @@
 }
 
 .aboutimg {
-    background-color: blue;
+    background: url("MEDIA/moosewala\ Background\ Removed.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
 }
 
 @media (min-width: 701px) and (max-width: 900px) {
